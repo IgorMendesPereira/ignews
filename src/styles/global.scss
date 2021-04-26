@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFFFF;
+
+    --gray-100: #e1e1e6;
+    --gray-300: #a8a8b3;
+    --gray-800: #29292e;
+    --gray-900: #121214;
+
+    --cyan-500: #61dafb;
+    --yellow-500: #eba417;
+
+}
+
+@media(max-width:1080px){  //a medida próxima de iPad
+    html{
+        font-size: 93.75%;  //fonte 15
+    }
+}
+
+@media(max-width:720){  //a medida próxima de mobile
+    html{ 
+        font-size: 87.5%;  //fonte 14
+    }
+}
+
+body {
+    background: var(--gray-900);
+    color: var(--white);
+}
+
+body, input, textarea, select, button {
+    font: 400 1rem "Roboto", sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit; //fazer o link assumir a cor do elemento pai
+    text-decoration: none; //tirar o traço de baixo do link
+}
